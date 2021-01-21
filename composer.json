@@ -1,0 +1,25 @@
+{
+    "name": "lifenet/lifenet-framework",
+    "description": "'Mini Framework'",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Armel Meledje",
+            "email": "meledjearmel@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Lifenet\\": "src/Lifenet/"
+        }
+    },
+    "require": {
+        "guzzlehttp/psr7": "^1.7",
+        "squizlabs/php_codesniffer": "*",
+        "psr/http-server-middleware": "^1.0",
+        "psr/http-server-handler": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    }
+}

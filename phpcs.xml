@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+
+<ruleset xmlns="$LOCAL_SCHEMA$" name="lifenet-framework">
+    <description>Mes regles de formattage</description>
+
+    <arg name="colors"/>
+    <arg value="p"/>
+
+    <file>src</file>
+    <file>public/index.php</file>
+
+    <rule ref="PSR2"/>
+    <rule ref="Generic.Arrays.DisallowLongArraySyntax"/>
+</ruleset>
