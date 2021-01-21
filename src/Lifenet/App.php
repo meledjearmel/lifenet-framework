@@ -4,6 +4,7 @@ namespace Lifenet;
 
 use GuzzleHttp\Psr7\MessageTrait;
 use GuzzleHttp\Psr7\Response;
+use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 
 /**
@@ -15,9 +16,9 @@ class App
 {
     /**
      * @param ServerRequestInterface $request
-     * @return MessageTrait
+     * @return ResponseInterface
      */
-    public function run(ServerRequestInterface $request): MessageTrait
+    public function run(ServerRequestInterface $request): ResponseInterface
     {
         $uri = $request->getUri()->getPath();
         if (!empty($uri) && $uri[-1] === '/') {
