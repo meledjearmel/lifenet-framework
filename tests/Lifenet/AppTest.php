@@ -1,6 +1,6 @@
 <?php
 
-namespace Test\Lifenet;
+namespace Tests\Lifenet;
 
 use GuzzleHttp\Psr7\ServerRequest;
 use Lifenet\App;
